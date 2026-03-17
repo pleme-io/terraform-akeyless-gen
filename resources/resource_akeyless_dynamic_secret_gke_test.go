@@ -29,7 +29,7 @@ func TestAccDynamicSecretGke_basic(t *testing.T) {
 				ResourceName:      "akeyless_dynamic_secret_gke.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"gke_cluster_cert", "gke_account_key"},
+				ImportStateVerifyIgnore: []string{"gke_account_key", "gke_cluster_cert"},
 			},
 		},
 	})

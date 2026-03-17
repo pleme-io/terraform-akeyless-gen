@@ -29,7 +29,7 @@ func TestAccDynamicSecretRedis_basic(t *testing.T) {
 				ResourceName:      "akeyless_dynamic_secret_redis.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"ssl_certificate", "password"},
+				ImportStateVerifyIgnore: []string{"password", "ssl_certificate"},
 			},
 		},
 	})

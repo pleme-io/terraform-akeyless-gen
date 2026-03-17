@@ -29,7 +29,7 @@ func TestAccTargetSsh_basic(t *testing.T) {
 				ResourceName:      "akeyless_target_ssh.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"ssh_password", "private_key", "private_key_password"},
+				ImportStateVerifyIgnore: []string{"ssh_password", "private_key_password", "private_key"},
 			},
 		},
 	})

@@ -29,7 +29,7 @@ func TestAccClassicKey_basic(t *testing.T) {
 				ResourceName:      "akeyless_classic_key.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"key_data", "cert_file_data"},
+				ImportStateVerifyIgnore: []string{"cert_file_data", "key_data"},
 			},
 		},
 	})

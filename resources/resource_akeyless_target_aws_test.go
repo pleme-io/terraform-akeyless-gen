@@ -29,7 +29,7 @@ func TestAccTargetAws_basic(t *testing.T) {
 				ResourceName:      "akeyless_target_aws.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"session_token", "access_key_id", "access_key"},
+				ImportStateVerifyIgnore: []string{"access_key", "access_key_id", "session_token"},
 			},
 		},
 	})

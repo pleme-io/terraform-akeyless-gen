@@ -29,7 +29,7 @@ func TestAccTargetSalesforce_basic(t *testing.T) {
 				ResourceName:      "akeyless_target_salesforce.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"client_secret", "security_token", "app_private_key"},
+				ImportStateVerifyIgnore: []string{"app_private_key", "security_token", "client_secret"},
 			},
 		},
 	})

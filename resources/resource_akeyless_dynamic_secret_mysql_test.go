@@ -29,7 +29,7 @@ func TestAccDynamicSecretMysql_basic(t *testing.T) {
 				ResourceName:      "akeyless_dynamic_secret_mysql.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"ssl_certificate", "mysql_password", "db_server_certificates"},
+				ImportStateVerifyIgnore: []string{"db_server_certificates", "ssl_certificate", "mysql_password"},
 			},
 		},
 	})

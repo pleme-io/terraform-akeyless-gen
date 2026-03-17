@@ -29,7 +29,7 @@ func TestAccDynamicSecretLdap_basic(t *testing.T) {
 				ResourceName:      "akeyless_dynamic_secret_ldap.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"ldap_certificate", "bind_dn_password"},
+				ImportStateVerifyIgnore: []string{"bind_dn_password", "ldap_certificate"},
 			},
 		},
 	})

@@ -29,7 +29,7 @@ func TestAccTargetWindows_basic(t *testing.T) {
 				ResourceName:      "akeyless_target_windows.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"certificate", "password"},
+				ImportStateVerifyIgnore: []string{"password", "certificate"},
 			},
 		},
 	})

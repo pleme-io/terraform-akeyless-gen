@@ -29,7 +29,7 @@ func TestAccTargetGodaddy_basic(t *testing.T) {
 				ResourceName:      "akeyless_target_godaddy.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"api_key", "imap_password", "secret"},
+				ImportStateVerifyIgnore: []string{"secret", "imap_password", "api_key"},
 			},
 		},
 	})

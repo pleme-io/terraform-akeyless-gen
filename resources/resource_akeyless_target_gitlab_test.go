@@ -29,7 +29,7 @@ func TestAccTargetGitlab_basic(t *testing.T) {
 				ResourceName:      "akeyless_target_gitlab.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"gitlab_certificate", "gitlab_access_token"},
+				ImportStateVerifyIgnore: []string{"gitlab_access_token", "gitlab_certificate"},
 			},
 		},
 	})

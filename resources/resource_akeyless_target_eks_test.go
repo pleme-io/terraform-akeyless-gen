@@ -29,7 +29,7 @@ func TestAccTargetEks_basic(t *testing.T) {
 				ResourceName:      "akeyless_target_eks.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"eks_cluster_ca_cert", "eks_access_key_id", "eks_secret_access_key"},
+				ImportStateVerifyIgnore: []string{"eks_cluster_ca_cert", "eks_secret_access_key", "eks_access_key_id"},
 			},
 		},
 	})

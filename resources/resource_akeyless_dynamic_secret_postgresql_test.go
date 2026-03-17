@@ -29,7 +29,7 @@ func TestAccDynamicSecretPostgresql_basic(t *testing.T) {
 				ResourceName:      "akeyless_dynamic_secret_postgresql.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"ssl_certificate", "postgresql_password", "db_server_certificates"},
+				ImportStateVerifyIgnore: []string{"db_server_certificates", "postgresql_password", "ssl_certificate"},
 			},
 		},
 	})

@@ -29,7 +29,7 @@ func TestAccTargetLdap_basic(t *testing.T) {
 				ResourceName:      "akeyless_target_ldap.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"bind_dn_password", "ldap_certificate"},
+				ImportStateVerifyIgnore: []string{"ldap_certificate", "bind_dn_password"},
 			},
 		},
 	})

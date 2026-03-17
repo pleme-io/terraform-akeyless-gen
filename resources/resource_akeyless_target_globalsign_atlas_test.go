@@ -29,7 +29,7 @@ func TestAccTargetGlobalsignAtlas_basic(t *testing.T) {
 				ResourceName:      "akeyless_target_globalsign_atlas.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"api_key", "mutual_tls_cert", "mutual_tls_key", "api_secret"},
+				ImportStateVerifyIgnore: []string{"api_secret", "mutual_tls_key", "api_key", "mutual_tls_cert"},
 			},
 		},
 	})

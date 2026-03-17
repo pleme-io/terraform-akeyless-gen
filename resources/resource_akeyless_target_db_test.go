@@ -29,7 +29,7 @@ func TestAccTargetDb_basic(t *testing.T) {
 				ResourceName:      "akeyless_target_db.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"db_server_certificates", "ssl_certificate", "mongodb_atlas_api_private_key", "pwd"},
+				ImportStateVerifyIgnore: []string{"pwd", "ssl_certificate", "mongodb_atlas_api_private_key", "db_server_certificates"},
 			},
 		},
 	})

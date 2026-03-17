@@ -29,7 +29,7 @@ func TestAccDynamicSecretAws_basic(t *testing.T) {
 				ResourceName:      "akeyless_dynamic_secret_aws.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"aws_access_secret_key", "aws_access_key_id"},
+				ImportStateVerifyIgnore: []string{"aws_access_key_id", "aws_access_secret_key"},
 			},
 		},
 	})

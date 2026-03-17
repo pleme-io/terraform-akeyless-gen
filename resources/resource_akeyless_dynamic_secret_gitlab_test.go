@@ -29,7 +29,7 @@ func TestAccDynamicSecretGitlab_basic(t *testing.T) {
 				ResourceName:      "akeyless_dynamic_secret_gitlab.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"gitlab_access_token", "gitlab_certificate"},
+				ImportStateVerifyIgnore: []string{"gitlab_certificate", "gitlab_access_token"},
 			},
 		},
 	})

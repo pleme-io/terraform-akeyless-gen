@@ -29,7 +29,7 @@ func TestAccDynamicSecretVenafi_basic(t *testing.T) {
 				ResourceName:      "akeyless_dynamic_secret_venafi.test",
 				ImportState:       true,
 				ImportStateVerify: true,
-				ImportStateVerifyIgnore: []string{"venafi_tpp_password", "venafi_api_key", "venafi_tpp_access_token"},
+				ImportStateVerifyIgnore: []string{"venafi_api_key", "venafi_tpp_access_token", "venafi_tpp_password"},
 			},
 		},
 	})
